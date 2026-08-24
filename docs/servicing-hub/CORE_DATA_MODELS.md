@@ -427,7 +427,7 @@ Servicing Hub would collapse these into one **Party** with an **Account/Contract
 
 ---
 
-## 6. Mapping hints toward Servicing Hub (preview)
+## 6. Mapping hints toward Servicing Hub
 
 | Canonical hub entity | Legacy source | Modernized source | Subscriptions source |
 |----------------------|---------------|-------------------|----------------------|
@@ -440,6 +440,8 @@ Servicing Hub would collapse these into one **Party** with an **Account/Contract
 | `ExternalIdentifier` | `account_number`, local `party_id` | `customer_id`, `contract_id` | `subscription_id`, OEM ids |
 
 **Passthrough candidates** (keep in core, expose via GraphQL when needed): legacy `COLLECTION_ACTIVITY`, modernized workflow flags, subscription `ENTITLEMENT_FLAG` / telematics debug, OEM capability matrices.
+
+**Executable merge:** Postgres DDL + mapping notes are in [CANONICAL_DDL.md](./CANONICAL_DDL.md) and [`sql/canonical_schema.sql`](./sql/canonical_schema.sql).
 
 ---
 

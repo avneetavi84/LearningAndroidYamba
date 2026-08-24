@@ -440,3 +440,5 @@ When you are ready to build: start **Phase 0 + Phase 1** — infra skeleton, can
 ## 14. Related: per-core logical models
 
 Detailed account-based, customer-based, and subscriptions schemas for this auto finance domain (indirect loan/lease + in-vehicle service subscriptions) are in [CORE_DATA_MODELS.md](./CORE_DATA_MODELS.md).
+
+Canonical merged Postgres DDL: [CANONICAL_DDL.md](./CANONICAL_DDL.md) · [`sql/canonical_schema.sql`](./sql/canonical_schema.sql).

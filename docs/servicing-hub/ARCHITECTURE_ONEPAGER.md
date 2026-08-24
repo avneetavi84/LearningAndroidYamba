@@ -55,3 +55,5 @@ Legacy file parity with today’s DB2 serving semantics in Postgres; modernized-
 ## Per-core models
 
 Logical data models for legacy (account-based loan/lease), modernized (customer-based loan/lease), and subscriptions (BlueCruise / media / Autopilot entitlements): [CORE_DATA_MODELS.md](./CORE_DATA_MODELS.md).
+
+Canonical Postgres DDL (merged hub): [CANONICAL_DDL.md](./CANONICAL_DDL.md).
