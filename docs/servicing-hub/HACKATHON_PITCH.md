@@ -166,4 +166,4 @@ Customer sees accounts / balances / subscription status from the same gateway (h
 
 **Build the hub that lets legacy receivables, modern receivables, and subscriptions share a servicing profile—without pretending every field belongs in one database. Then show it live.**
 
-Detailed architecture: [MODERNIZATION_PLAN.md](./MODERNIZATION_PLAN.md) · [ARCHITECTURE_ONEPAGER.md](./ARCHITECTURE_ONEPAGER.md)
+Detailed architecture: [MODERNIZATION_PLAN.md](./MODERNIZATION_PLAN.md) · [ARCHITECTURE_ONEPAGER.md](./ARCHITECTURE_ONEPAGER.md) · [CORE_DATA_MODELS.md](./CORE_DATA_MODELS.md)

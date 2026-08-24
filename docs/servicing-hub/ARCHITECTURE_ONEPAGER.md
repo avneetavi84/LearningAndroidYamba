@@ -51,3 +51,7 @@ Not used for ingest or merge. Domain REST/gRPC stays under the gateway for jobs 
 ## POC success
 
 Legacy file parity with today’s DB2 serving semantics in Postgres; modernized-receivables events and subscriptions ETL in the same hub; UIs via GraphQL showing a unified profile plus one demonstrated core passthrough.
+
+## Per-core models
+
+Logical data models for legacy (account-based loan/lease), modernized (customer-based loan/lease), and subscriptions (BlueCruise / media / Autopilot entitlements): [CORE_DATA_MODELS.md](./CORE_DATA_MODELS.md).

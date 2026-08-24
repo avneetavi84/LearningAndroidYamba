@@ -140,7 +140,7 @@ Use an explicit **80/20 (canonicalize vs passthrough)** policy. If a field is ra
 | `Account` | Receivable account / obligation container |
 | `AccountPartyRole` | Links parties ↔ accounts (`PRIMARY`, `JOINT`, `GUARANTOR`, …) — **bridges account-based and customer-based receivables** |
 | `Balance` / `ReceivableItem` | Amounts, aging, status |
-| `Subscription` | Subscriptions LOB header (plan, status, cycle) linked to `Party` and optionally `Account` |
+| `Subscription` | Vehicle service entitlement (e.g. BlueCruise, SiriusXM-style media, Autopilot) linked to `Party` / VIN and optionally a loan/lease `Account` |
 | `ExternalIdentifier` | `(source_system, entity_type, external_id) → canonical_id` |
 | `ChangeEvent` | Normalized history for agent timeline / audit |
 
@@ -436,3 +436,7 @@ servicing-hub/
 ## 13. Immediate next step
 
 When you are ready to build: start **Phase 0 + Phase 1** — infra skeleton, canonical schema, one anonymized legacy-receivables file through to Postgres, parity check, and a single domain API. Then put a thin GraphQL facade in front of it so Phase 2–3 (events, subscriptions ETL, passthrough) plug into the same client contract.
+
+## 14. Related: per-core logical models
+
+Detailed account-based, customer-based, and subscriptions schemas for this auto finance domain (indirect loan/lease + in-vehicle service subscriptions) are in [CORE_DATA_MODELS.md](./CORE_DATA_MODELS.md).
