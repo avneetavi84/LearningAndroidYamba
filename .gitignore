@@ -29,6 +29,8 @@
 *.log
 *.sql
 *.sqlite
+# Allow checked-in schema DDL under Servicing Hub docs
+!docs/servicing-hub/sql/*.sql
 
 # OS generated files #
 ######################
